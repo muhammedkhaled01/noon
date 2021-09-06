@@ -1,0 +1,833 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Framework */
+
+.button_fixed {
+    background: #D4002A;
+    border: 1px solid #D4002A;
+    height: 47px;
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+}
+
+/* Framework */
+
+/* Start navbar */
+
+nav {
+    padding-top: 10px;
+}
+
+.logo {
+    width: 30%;
+    max-width: 40%;
+    display: inline-block;
+    margin-top: 17px;
+    position: relative;
+    height: 50px;
+    float: right;
+}
+
+.logo img:first-of-type {
+    width: 100%;
+    /* float: left; */
+}
+
+.logo-noon {
+    max-width: 25%;
+    width: 23%;
+    position: absolute;
+    top: -9px;
+    right: -41px;
+}
+
+.logo-noon img {
+    width: 100% !important;
+    margin-right: 0 !important;
+}
+
+.lang {
+    padding: 9px;
+    text-align: left;
+}
+
+.lang button:focus {
+    box-shadow: none;
+}
+
+.lang span {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+/* End navbar */
+
+/* Start footer */
+
+footer {
+    background-color: #000000;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+ul.list-footer {
+    padding: 0;
+    text-align: center;
+}
+
+.list-footer li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.telephone {
+    float: left;
+}
+
+footer a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+/* End footer */
+
+/* Start fr section */
+
+.content_booking {
+    width: 80%;
+    margin-top: 120px;
+}
+
+.title-leftSide {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #040A16;
+}
+
+.content_booking p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+}
+
+.content_booking a {
+    width: 143px;
+    height: 52px;
+    background: #CD0129 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF !important;
+    margin-top: 50px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-slider {
+    position: relative;
+    margin-top: 50px;
+}
+
+.container-data {
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #040A161A;
+    width: 35%;
+    box-shadow: 0px 10px 40px #2020200f;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.container-data p {
+    font-size: 28px;
+    font-weight: 700;
+    color: #040A16;
+    margin-bottom: 0;
+}
+
+.container-data span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 0.4;
+}
+
+.container-image img {
+    margin-top: -30px;
+}
+
+.testimonials {
+    width: 53%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 40px #2020201f;
+    border: 1px solid #040A1633;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+}
+
+.testimonials p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #040A16;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.commenter .container-image {
+    display: inline-block;
+    width: 18%;
+    margin-right: 5px;
+}
+
+.commenter .data {
+    display: inline-block;
+}
+
+.commenter .data p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.commenter .data span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none !important;
+}
+
+/* End fr section */
+
+/* =================================== Start location page ===================================== */
+
+.select-location {
+    margin-top: 50px;
+    width: 80%;
+}
+
+.select-location .title-leftSide {
+    font-size: 34px;
+}
+
+.break {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #D4002A;
+    position: relative;
+    margin-top: 30px;
+}
+
+p.break::after, p.break::before {
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: #D4002A;
+    position: absolute;
+    top: 10px;
+}
+
+p.break::after {
+    right: 0;
+}
+
+p.break::before {
+    left: 0;
+}
+
+/* =================================== End location page ===================================== */
+
+/* =================================== Start  choose page ===================================== */
+
+.title_choose {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.progress_bar {
+    background: #D4002A0D 0% 0% no-repeat padding-box;
+    border: 1px solid #D4002A33;
+    border-radius: 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.checked {
+    position: relative;
+}
+
+.checked:first-of-type::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #D4002A;
+    color: #D4002A;
+    position: absolute;
+    top: 16px;
+    right: 56px;
+}
+
+.dashed_steps {
+    position: relative;
+}
+
+.dashed_steps::after {
+    content: "";
+    width: 120px;
+    border: 1px dashed #040A16;
+    position: absolute;
+    top: 16px;
+    right: 56px;
+    opacity: 0.4;
+}
+
+.step:last-of-type:after {
+    border: unset;
+}
+
+.bullet {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #040A16;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #040A16;
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+.low_opacity {
+    opacity: 0.4;
+}
+
+.text_step {
+    font-size: 18px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.checked {
+    background: #D4002A 0% 0% no-repeat padding-box;
+    border: 1px solid #D4002A;
+    opacity: 1;
+    color: #fff;
+}
+
+.next_check {
+    border: 1px solid #D4002A;
+    opacity: 1;
+    color: #D4002A;
+}
+
+h2.title-vehicle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #040A16;
+}
+
+.header_desc p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    opacity: 0.6;
+}
+
+.header-desc span {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.header-desc a {
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #D4002A;
+    text-decoration: underline;
+}
+
+.box_desc_car .card:first-of-type {
+    border: unset;
+}
+
+.box_desc_car .card {
+    border: unset;
+    border-top: 1px solid #9B9DA2;
+    border-bottom: 1px solid #9B9DA2;
+    border-radius: unset;
+    margin-top: 10px;
+}
+
+.box_desc_car .card-header {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.box_desc_car h6 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #040A16;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.collapsible {
+    background-color: transparent;
+    padding-left: 0;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.collapsible span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.collapsible span:first-of-type {
+    color: #9B9DA2;
+}
+
+.collapsible span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    color: #040A16;
+}
+
+.box_desc_car .card-header button {
+    width: 100%;
+    text-align: right;
+    text-decoration: none !important;
+    color: #000 !important;
+    padding-left: 0;
+}
+
+.box_desc_car .card-header button span:first-of-type {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9B9DA2;
+}
+
+.box_desc_car .card-header button span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+}
+
+.box_desc_car .card-body {
+    padding: 0;
+}
+
+.box_desc_car .card-body .container-img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 15px;
+}
+
+.price_caars {
+    font-size: 32px;
+    font-weight: 600;
+    color: #040A16;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+p.text-desc-cars {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9B9DA2;
+    opacity: 1;
+}
+
+.require_excesses {
+    border-top: 1px solid #9B9DA2;
+    border-bottom: 1px solid #9B9DA2;
+    margin-top: 10px;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.desc_car span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #040A16;
+}
+
+.features_car {
+    margin-bottom: 10px;
+    padding: 3px 2px 3px 2px;
+    border-radius: 2px;
+}
+
+.info_icon {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.exclamation span:nth-child(2), .excesses span:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.fixed_hover {
+    transition: all .3s ease-in-out;
+    color: #D4002A;
+}
+
+.fixed_hover:hover {
+    background-color: #D4002A;
+    color: #fff;
+}
+
+/* =================================== End choose page ===================================== */
+
+/* =================================== Start service page ===================================== */
+
+.card_service {
+    margin-top: 35px;
+}
+
+.card-header-service h3.title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.card-header-service p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.card-body-service b {
+    font-size: 32px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.card-body-service span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #040A16;
+    padding-left: 10px;
+}
+
+.card-body-service p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9B9DA2;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.remove_service {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9B9DA2;
+    float: left;
+    margin-top: -7px;
+}
+
+.previous_page {
+    margin-top: 7px;
+}
+
+.previous_page a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #040A16;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.total_service {
+    float: left;
+}
+
+.total_service span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 1;
+}
+
+/* =================================== End Service page ===================================== */
+
+/* =================================== Start  information page ===================================== */
+
+.header_form_information h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #040A16;
+}
+
+.header_form_information p {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.iti.iti--allow-dropdown {
+    width: 100%;
+}
+
+.form_information label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #040A16;
+}
+
+.form_information input.form-control, .form_information select.form-control {
+    background: #FBFCFD 0% 0% no-repeat padding-box;
+    border: 1px solid #040A1633;
+    border-radius: 2px;
+    opacity: 1;
+    height: 48px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.code-verify {
+    width: 100%;
+    display: inline-block;
+}
+
+.mapouter {
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.label_privacy {
+    font-size: 16px;
+    font-weight: 500;
+    color: #040A16;
+}
+
+/* =================================== End information page ===================================== */
+
+/* =================================== Start payment method page ===================================== */
+
+.payment-method {
+    width: 281px;
+    height: 48px;
+    background: #D4002A0D 0% 0% no-repeat padding-box;
+    border: 1px solid #D4002A33;
+    border-radius: 2px;
+    padding: 12px 20px 0 20px;
+}
+
+/* =================================== End payment method page ===================================== */
+
+/* =================================== Start payment  page ===================================== */
+
+.payment {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 7px;
+    height: auto;
+    padding: 30px;
+}
+
+.payment .mada, .payment .visa {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.apple-pay {
+    height: 67px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.apple-pay img {
+    width: 10%;
+}
+
+.selected {
+    border: 1px solid #BF072B !important;
+}
+
+#demo {
+    height: 200px;
+    margin-top: 20px;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 7px;
+    display: none;
+}
+
+/* =================================== End payment  page ===================================== */
+
+/* =================================== Start Checkout  page ===================================== */
+
+.header-checkout {
+    margin-top: 50px;
+}
+
+.header-checkout h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #040A16;
+}
+
+.header-checkout p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 0.6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-form {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 15px 30px #9B9DA20F;
+    border: 1px solid #040A1633;
+    border-radius: 2px;
+}
+
+.text_right_form {
+    text-align: right;
+}
+
+.title_card_form h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #D4002A;
+    margin-bottom: 30px;
+}
+
+.text_left_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #9B9DA2;
+}
+
+.text_data {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+}
+
+.card_form_footer {
+    overflow: hidden;
+}
+
+.card_form_footer span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.total_payment {
+    color: #040A16;
+}
+
+.price_payment {
+    float: left;
+    color: #D4002A;
+}
+
+.card_form_footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 0.4;
+    margin-top: 30px;
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+
+.card_form_footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #040A16;
+    opacity: 0.4;
+    margin-top: 30px;
+}
+
+.jconfirm-icon-c {
+    display: block !important;
+    margin-bottom: 10px;
+}
+
+.jconfirm-title-c {
+    text-align: center;
+}
+
+/* =================================== End payment  page ===================================== */

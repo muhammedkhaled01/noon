@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        /* .collapsible:after {
+            content: '\f0dd';
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\f0de";
+        } */
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!-- Start navbar -->
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <a href="index.html" class="logo">
+
+                        <img src="images/logo_en.png" class="img-fluid" alt="">
+                        <div class="logo-noon">
+                            <img src="images/Layer 0.png" class="img-fluid" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="dropdown lang">
+                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <img src="images/usa-flag.png" class="img-fluid" alt=""> -->
+                            <span>Language</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="index.html">English</a>
+                            <a class="dropdown-item" href="index_ar.html">العربية</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- Start progress bar -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5 class='title_choose'>Your booking</h5>
+            </div>
+            <div class="col-12">
+                <div class="progress_bar" id="progressBar">
+                    <div class="step">
+                        <div class="bullet checked"><i class="fas fa-check"></i></div>
+                        <div class="text_step text-danger">Locations</div>
+                    </div>
+                    <div class="step ">
+                        <div class="bullet dashed_steps next_check">2</div>
+                        <div class="text_step text-danger">Choose vehicle</div>
+                    </div>
+                    <div class="step ">
+                        <div class="bullet dashed_steps">3</div>
+                        <div class="text_step low_opacity">Extra services</div>
+                    </div>
+                    <div class="step ">
+                        <div class="bullet dashed_steps">4</div>
+                        <div class="text_step low_opacity">Personal infomation</div>
+                    </div>
+                    <div class="step">
+                        <div class="bullet">5</div>
+                        <div class="text_step low_opacity">Confirmation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End progress bar -->
+
+    <!-- Start section choose car -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="header-desc">
+                    <h2 class="title-vehicle">Select your preffered vehicle type</h2>
+                    <p>Below mentioned prices includes up to 400km distance</p>
+                    <span>*We will inform the available vehicle model(s) based on the selected type of vehicle upon
+                        confirmation.</span>
+                    <a href="#">Terms and conditions</a>
+                </div>
+
+            </div>
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Economy</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Kia Rio</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/kia-rio.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>City Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Suzuki Dzire</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/suzuki-dzire.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Small Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Hyundai Accent Full Options</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/hyundai-accent-full-options.png" class="img-fluid"
+                                alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Med-Size Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Hyundai Elantra or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/hyundai-elantra.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Med-Size Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>KIA Cerato Full Option</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/kia-cerato-full-option.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Large-Size Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Sonata or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/sonata.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Large-Size Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Sonata 2021</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/sonata-2021.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Fun Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Mini Cooper</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/mini-cooper.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Fun Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>BMW 420i</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/bmw-420i.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Fun SUV</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Jeep Wrangler</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/jeep-wrangler.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Small SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Hyundai Tucson or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/hyundai-tucson.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Small SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Captiva/Creta or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/captiva-creta.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Large SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Mazda CX9 Full Option</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/mazda-cx9-full-option.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Large SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Taurus Full option</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/taurus-full-option.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Large SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Ford Explorer Full Option</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/ford-explorer-full-option.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Family SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Tahoe or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/tahoe.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Family SUVs</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Ford Expedition</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/ford-expedition.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Selected Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Ford F150 Super crew</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/ford-f150-super-crew.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Selected Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Dodge RAM</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/dodge-ram.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Selected Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Mercedes E200</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/mercedes-e200.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Premium Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Genesis G80 or Equivalent</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/genesis-g80.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Premium Cars</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Mercedes C200</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/mercedes-c200.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Luxury Car</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>BMW 7</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/bmw-7.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Luxury SUV</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Range Rover Evoque</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/range-rover-evoque.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Commercial</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Ford Ranger XLT</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/ford-ranger-xlt.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="box_desc_car border p-3 mt-3">
+                    <h6>Commercial</h6>
+                    <button class="collapsible active">
+                        <span>Example below: </span>
+                        <span>Ford Ranger Wildtrak</span>
+                    </button>
+                    <div class="content" style="max-height: 100%;">
+                        <div class="desc_car">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-seat-icon.svg" class="img-fluid" alt="">
+                                        <span>5 Seats</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/car-door-icon.svg" class="img-fluid" alt="">
+                                        <span>4 Doors</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/transmission-icon.svg" class="img-fluid" alt="">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/bag-icon.svg" class="img-fluid" alt="">
+                                        <span>2 Bags</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/fuel-icon.svg" class="img-fluid" alt="">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="border text-center features_car">
+                                        <img src="images/ac-icon.svg" class="img-fluid" alt="">
+                                        <span>A/C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-img">
+                            <img src="images/select-car/cars/ford-ranger-wildtrak.png" class="img-fluid" alt="car">
+                        </div>
+                        <h4 class="price_caars">SAR 0,000</h4>
+                        <p class="text-desc-cars">Pay on collection with free cancellation fee</p>
+
+
+                    </div>
+                    <button class="collapsible require_excesses">
+                        Requirements and excesses
+                        <i class="fas fa-sort-down float-right mr-2"></i>
+                    </button>
+                    <div class="content">
+                        <p class="requirements line_right mt-3">REQUIREMENTS</p>
+
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="exclamation">
+                            <img src="images/select-car/info-icon-yellow.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+
+                        <p class=" line_right mt-3">EXCESSES</p>
+
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Age 25 years or elder</span>
+                        </div>
+                        <div class="excesses">
+                            <img src="images/select-car/info-icon-red.svg" class="img-fluid info_icon" alt="info">
+
+                            <span>Full driving license (at lease 12 months old)</span>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="extra_services.html" class="btn border-danger fixed_hover  w-100 mt-4"><b>Choose
+                                this</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+
+
+
+
+        </div>
+    </div>
+    <!-- End section choose car -->
+
+
+
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <a href="#" class="footer-link">
+                        Avis.com.sa
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <ul class="list-footer">
+                        <li><a href="#"><img src="images/facebook.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="#"><img src="images/twitter.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="#"><img src="images/instagram.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="#"><img src="images/snapchat.svg" class="img-fluid" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="tel:920028281" class="telephone">920028281</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

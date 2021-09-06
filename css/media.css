@@ -1,0 +1,170 @@
+@media(max-width:1200px) {
+    /* Start page choose */
+    .checked:first-of-type::after, .dashed_steps::after {
+        width: 90px;
+        right: -119px;
+    }
+    /* End page choose */
+}
+
+@media(max-width:992px) {
+    .logo {
+        width: 45%;
+        max-width: 40%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .logo-noon {
+        top: -10px;
+        right: -52px;
+        }
+    .lang {
+        /* text-align: left; */
+        padding-left: 0;
+    }
+    .lang button {
+        padding-left: 0;
+    }
+    .select-location, .content_booking {
+        width: 100%;
+    }
+    .container-data {
+        left: 0px;
+    }
+    .testimonials {
+        right: 0px;
+    }
+    /* Start page choose */
+    .checked:first-of-type::after, .dashed_steps::after {
+        width: 40px;
+        right: -40px;
+    }
+    /* End page choose */
+    /* Start information page */
+    /* .iti.iti--allow-dropdown {
+        width: 100%;
+        margin-bottom: 30px;
+    } */
+    .total_service {
+        float: left;
+        margin-top: 25px;
+    }
+    #btnContinue {
+        margin-top: 30px;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .apple-pay img {
+        width: 16%;
+    }
+}
+
+@media(max-width:767px) {
+
+    /* Start page choose */
+    .progress_bar {
+        flex-direction: column;
+    }
+    .step {
+        margin-bottom: 90px;
+    }
+    .checked:first-of-type::after {
+        content: "";
+        width: 2px;
+        height: 62px;
+        background-color: #D4002A;
+        color: #D4002A;
+        position: absolute;
+        top: 70px;
+        left: 15px;
+    }
+    .dashed_steps::after {
+        content: "";
+        width: 2px;
+        height: 62px;
+        border: 1px dashed #040A16;
+        position: absolute;
+        top: 70px;
+        left: 15px;
+        opacity: 0.4;
+    }
+    .card-body .container-img {
+        text-align: center;
+    }
+    /* End page choose */
+    /* Start extra page */
+    .total_service {
+        float: none;
+        margin-top: 20px;
+    }
+    /* Start payment page */
+    .payment .mada {
+        margin-top: 25px !important;
+    }
+}
+
+@media(max-width:577px) {
+    .logo {
+        text-align: center;
+    }
+    .lang {
+        text-align: unset;
+    }
+    .logo-noon {
+        position: absolute;
+        top: -10px;
+        right: -52px;
+    }
+    .arrows {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .testimonials, .container-data {
+        width: 100%;
+        position: unset;
+    }
+    .title-leftSide {
+        font-size: 44PX;
+    }
+    .content_booking {
+        margin-top: 50px;
+    }
+    ul.list-footer {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .telephone {
+        float: none;
+    }
+    /* Start information page */
+    /* .code-verify {
+        width: 79%;
+    } */
+}
+
+@media(max-width:428px) {
+    p.break::after, p.break::before {
+        width: 100px;
+    }
+    /* Start choose page  */
+    /* .dashed_steps::after {
+        content: "";
+        width: 2px;
+        height: 62px;
+        border: 1px dashed #040A16;
+        position: absolute;
+        top: 70px;
+        left: 179px;
+        opacity: 0.4;
+    } */
+    /* End choose page  */
+}
+
+@media(max-width:394px) {
+    .total_service a {
+        margin-left: 0 !important;
+        margin-top: 20px;
+        display: block;
+    }
+}
